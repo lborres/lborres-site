@@ -1,0 +1,17 @@
+---
+let links = [
+  {name: 'Home', href: '/'},
+  {name: 'About', href: '/about'},
+  {name: 'Contact', href: '/contact'},
+];
+---
+<h1>
+  
+</h1>
+<nav>
+  <ul>
+    {links.map(link => (
+      <li><a href={link.href}>{link.name}</a></li>
+    ))}
+  </ul>
+</nav>
